@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+html {
+  background-color: rgba(0, 128, 128, 0.527);
+}
+.bookForm {
+  display: grid;
+  width: 400px;
+  border: solid black 4px;
+  border-radius: 20px;
+  margin: auto auto 40px;
+  padding: 20px;
+  background-color: peachpuff;
+  color: black;
+  align-content: stretch;
+}
+#bookTitle {
+  margin: 8px;
+  border: solid black 2px;
+}
+#bookTitle:hover {
+  background-color: antiquewhite;
+}
+#Author {
+  margin: 8px;
+  border: solid black 2px;
+}
+#Author:hover {
+  background-color: antiquewhite;
+}
+#read {
+  margin: 8px;
+  border: solid black 2px;
+}
+#read:hover {
+  background-color: antiquewhite;
+}
+#submit {
+  margin: 8px;
+  border: solid black 2px;
+  border-radius: 8px;
+  background-color: sandybrown;
+}
+#submit:hover {
+  background-color: darksalmon;
+}
+table {
+  width: 800px;
+  margin: 0px auto;
+  border: solid black 2px;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: solid 2px black;
+  padding: 4px;
+  background-color: peachpuff;
+  color: black;
+}
+th {
+  text-align: left;
+  background-color: peachpuff;
+  color: black;
+}
+#settings {
+  width: 200px;
+  background-color: peachpuff;
+}
+#settings > * {
+  margin: 4px;
+  border: solid black 2px;
+  cursor: pointer;
+  background-color: rosybrown;
+}
+#submit:hover {
+  background-color: darksalmon;
+}
+
+.Header {
+  display: stretch;
+  align-items: center;
+  text-align: center;
+  background-color: chocolate;
+  color: black;
+}
+.Header > p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media only screen and (max-width: 600px) {
+  .bookForm,
+  table {
+    width: auto;
+    table-layout: fixed;
+  }
+  td {
+    word-break: break-all;
+  }
+}
